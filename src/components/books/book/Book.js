@@ -6,6 +6,7 @@ import {
 import 'react-circular-progressbar/dist/styles.css';
 import { useDispatch } from 'react-redux';
 import { removeBook } from '../../../redux/books/books';
+import './book.css';
 
 const Book = ({ bookInfo, progress }) => {
   const dispatch = useDispatch();
@@ -45,4 +46,5 @@ const Book = ({ bookInfo, progress }) => {
     </div>
   );
 };
+
 export default Book;
