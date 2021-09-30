@@ -93,13 +93,7 @@
   height: 4.25rem;
 }
 
-.book-card
-  .card-wrap
-  .start
-  .right
-  .progress-bar
-  .CircularProgressbar
-  .CircularProgressbar-path {
+.book-card .card-wrap .start .right .progress-bar .CircularProgressbar .CircularProgressbar-path {
   stroke: #0290ff;
 }
 
