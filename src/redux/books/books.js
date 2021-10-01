@@ -13,7 +13,7 @@ const postBook = (book) => {
   axios.post(`${API_URL}`, book);
 };
 const deleteBook = (id) => {
-  axios.delete(`${API_URL}${id}`);
+  axios.delete(`${API_URL}/${id}`);
 };
 // ACTIONS
 export const createBook = (book) => ({

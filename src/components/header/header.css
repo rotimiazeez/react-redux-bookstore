@@ -3,3 +3,60 @@ header {
   background-color: #fff;
   border-bottom: solid 2px #e8e8e8;
 }
+
+header nav {
+  width: 100%;
+  max-width: 75.168rem;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header nav .logo {
+  font-size: 1.875rem;
+  line-height: 2.313rem;
+  font-weight: bold;
+  color: #0290ff;
+  text-decoration: none;
+  margin-right: 2.939rem;
+}
+
+header nav ul {
+  list-style-type: none;
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  gap: 2.563rem;
+}
+
+header nav ul li a {
+  font-size: 0.813rem;
+  letter-spacing: 1.9px;
+  color: #888;
+  text-decoration: none;
+}
+
+header nav ul li a:hover {
+  transition: 0.3s;
+  color: #121212;
+}
+
+header nav ul li a.active {
+  color: #121212;
+}
+
+header nav .profile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 2.813rem;
+  height: 2.813rem;
+  border: solid 1px #e8e8e8;
+  border-radius: 50%;
+}
+
+header nav .profile svg {
+  font-size: 1.063rem;
+  color: #0290ff;
+}
