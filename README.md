@@ -103,7 +103,7 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- Hat tip to Zeplin project
+- Hat tip to Zeplin project, Carlos Feliz
 - Inspiration, resources/assets used
 - etc
 
