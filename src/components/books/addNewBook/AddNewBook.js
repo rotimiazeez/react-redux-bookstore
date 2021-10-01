@@ -7,9 +7,9 @@ import './addNewBook.css';
 const AddNewBook = () => {
   const dispatch = useDispatch();
   const [bookInfo, setBookInfo] = useState({
-    id: uuidv4(),
-    name: '',
-    author: '',
+    item_id: '',
+    title: '',
+    category: '',
   });
   const handleChange = (name) => (e) => {
     setBookInfo({ ...bookInfo, [name]: e.target.value });
@@ -27,8 +27,8 @@ const AddNewBook = () => {
     <section className="add-new-book-section">
       <h2>ADD NEW BOOK</h2>
       <form onSubmit={(e) => onSubmit(e)}>
-        <input onChange={handleChange('name')} type="text" name="name" placeholder="Book title" value={bookInfo.name} />
-        <input onChange={handleChange('author')} type="text" name="author" placeholder="Author name" value={bookInfo.author} />
+        <input onChange={handleChange('title')} type="text" name="title" placeholder="Book title" value={bookInfo.title} />
+        <input onChange={handleChange('category')} type="text" name="category" placeholder="Author name" value={bookInfo.category} />
         <button onClick={onClick} type="submit">ADD BOOK</button>
       </form>
     </section>
