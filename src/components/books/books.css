@@ -1,0 +1,14 @@
+.books-page {
+  width: 100%;
+  min-height: calc(100vh - 92px);
+  background-color: #fafafa;
+}
+
+.books-page .book-list {
+  padding-top: 1.437rem;
+  list-style: none;
+  padding-bottom: 2.5rem;
+  border-bottom: solid 2px #e8e8e8;
+  max-width: 75rem;
+  margin: auto;
+}
