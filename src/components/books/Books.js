@@ -1,10 +1,15 @@
-import React from 'react';
-import { useSelector } from 'react-redux';
+import React, { useEffect } from 'react';
+import { useSelector, useDispatch } from 'react-redux';
 import AddNewBook from './addNewBook/AddNewBook';
 import Book from './book/Book';
+import { fetchBooks } from '../../redux/books/books';
 import './books.css';
 
 const Books = () => {
+  const dispatch = useDispatch();
+  useEffect(() => {
+    dispatch(fetchBooks());
+  }, []);
   const { booksReducer } = useSelector((state) => state);
   const { books } = booksReducer;
   return (
